@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Stop Watch</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Stop watch Design -->
+        <div class=" timer-container mid-text">
+            <!-- Displays Timer value -->
+            <div class="timer-display">
+                00 : 00 : 00 : 000
+            </div>
+            <!-- Wraps Start Stop and Reset Button -->
+            <div class="button">
+                <button id="start-timer" class="btn-2">
+                    Start
+                </button>
+                <button id="pause-timer" class="btn-2">
+                    Pause
+                </button>
+                <button id="reset-timer" class="btn-2">
+                    Reset
+                </button>
+            </div>
+        </div>
+
+        <!-- Elements For the running wallpaper  -->
+        <div class="line line1">
+            <!-- Elements for wave animation -->
+            <div class="wave wave1" style="background-image: url(1.png);"></div>
+        </div>
+        <div class="line line2">
+            <div class="wave wave2 " style="background-image: url(2.png);"></div>
+        </div>
+        <div class="line line3">
+            <div class="wave wave3" style="background-image: url(3.png);"></div>
+        </div>
+
+    </div>
+    <audio id="startSound" src="start.mp3" preload="auto"></audio>
+    <audio id="resetSound" src="stop.mp3" preload="auto"></audio>
+    <script src="main.js"></script>
+</body>
+
+</html>
